@@ -8,8 +8,8 @@ The web interface (served with a node.js container) opens a connection to the c+
 The c++ server is in the folder *<u>cppDetectionServer</u>*, and the rest of the files are the web server.  The server is the file *<u>src/index.js</u>* . The html files served (using ejs) are in the folder *<u>views</u>*, adhearing to the MVC architecture.
 
 ## The Dockerized architecture
-The project is split into two containers:
-    backend: The c++ server which the algorithms are on.
+The project is split into two containers:  
+    backend: The c++ server which the algorithms are on.  
     frontend: The node.js server which serves a web interface and handles requests.
 
 ## Prerequisites
@@ -37,6 +37,6 @@ You need to supply a JSON object in the following format
   Where trainData and detectData are the actual data (and not file names)
   The returned value is a JSON obejct that contains the anomalies.
   
-## Screen shot
+## Screenshot
 ![image](https://user-images.githubusercontent.com/56509308/120115595-0a29e780-c18d-11eb-8b0c-d37a9f46c394.png)
 
