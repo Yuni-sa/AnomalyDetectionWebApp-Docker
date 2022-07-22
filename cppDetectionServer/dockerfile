@@ -1,0 +1,11 @@
+FROM gcc:6
+
+WORKDIR /app
+
+COPY . ./
+
+EXPOSE 8000
+
+RUN make
+
+CMD ["./server.out"]

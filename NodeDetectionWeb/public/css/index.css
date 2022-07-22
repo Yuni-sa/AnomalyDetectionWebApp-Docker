@@ -1,0 +1,195 @@
+
+/* Header */
+.header{
+    height: 40px;
+    width: 100vw;
+    background:rgb(0, 110, 255);
+    color: white;
+}
+.header span{
+    font-size: 25px
+}
+/* Index */
+*{
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* style for body view */
+main{
+    text-align: left;
+    /*change to center?*/
+}
+.body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+   /*grid-template-rows: 20% 20% 20% 40%;*/
+}
+.body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    display:grid;
+    grid-template-columns: 25% 15% 60%;
+    grid-column-gap: 2em;
+    grid-row-gap:0em;
+    font-family: Arial;
+    background-image: linear-gradient(180deg,#e27d60 10%,#e8a87c, #85ccc9 , #85dcb8 ); 
+}
+.griditem {
+padding:10px;
+color: #fff;
+margin: 10px;
+background-color: rgba(255,255,255,0.1);
+border: 1px solid rgba(255,255,255,0.15);
+width: 100%;
+height: max-content;
+border-radius: 15px;
+backdrop-filter: blur(10px);
+position: relative;
+display: inline;
+}
+.wrapper{
+    display: relative;
+}
+
+/* select button style */
+.box select{
+    color: white;
+    padding: 10px;
+    width: 300px;
+    height: 50px;
+    border: none;
+    font-size: 25px;
+    -webkit-appearance: border;
+    outline: none;
+    border: 0;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(30px);
+    /*color: rgba(255,255,255,0.8);*/
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.box select option { 
+    background-color: #85ccc9;
+}
+
+/* choose file buttons */
+.fileButtons{
+    margin: auto;
+}
+.without, .with {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 50px;
+}
+#without{
+    display: none;
+}
+#with {
+    display: none;
+}
+.without span, .with span {
+    align-items: left;
+    text-align: left;
+    font-size: 22px;
+}
+label{
+    color: white;
+    height: 40px;
+    width: 200px;
+    /* margin: auto; */
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 15px;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+label:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+.without span {
+    margin-right: 10px;
+}
+.start > button {
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 24px 32px;
+    border: 0;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.start button:active {
+    background-color: rgba(255,255,255,0.2);
+}
+#resultsContainer {
+    overflow: hidden;
+    position: relative;
+    /*border: 5px solid rgba(255,255,255,0.5);*/
+    border-radius: 3%;
+    /*margin: 30px;*/
+    /*width: 150px;*/
+}
+/*#results {
+    padding: 30px;
+    resize: none;
+    border: 0px ;
+    border-radius: 3%;
+    background-color:#e27c60a3 ;
+    height: 70%;
+    width: 90%;
+    right: 0;
+    top: 0;
+}*/
+ul {
+    margin-left: -5px
+}
+ul li {
+    list-style-type: none;
+    background: #cce5ff70;
+    border-radius: 15px;
+    margin: 5px;
+}
+nav ul{
+    overflow:hidden;
+    overflow-y:scroll;
+    height: 316px;
+}
+ul li button {
+    border: none;
+    /*font-weight: bold;*/
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(255,255,255,0.8);
+    cursor: pointer;
+}
+ul li button:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+ul li button:active {
+    background-color: rgba(255,255,255,0.2);
+}
+h1 {
+    font-family: 'Bitter', serif;
+}

@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  backend:
+    build: ./cppDetectionServer/
+    container_name: 'cppserver'
+  frontend:
+    build: ./NodeDetectionWeb/
+    container_name: 'nodewebapp'
+    ports:
+      - 8080:8080
+    depends_on:
+      - backend
+
